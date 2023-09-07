@@ -7,6 +7,7 @@
 
 # After Login
 
-    ![image](https://github.com/Nasruddinkhan/docker-compose/assets/35895259/a851aaa8-0d2c-4137-ba62-14d0f08bf71b)
+    ![phpmyadmin-dashboard](https://github.com/Nasruddinkhan/docker-compose/assets/35895259/0ed481d0-376c-4244-adbb-0066bd342890)
+
 
 
