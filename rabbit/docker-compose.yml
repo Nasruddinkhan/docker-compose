@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"     # AMQP protocol port (for Spring Boot)
+      - "15672:15672"   # HTTP Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    networks:
+      - rabbit-net
+
+volumes:
+  rabbitmq_data:
+
+networks:
+  rabbit-net:
+    driver: bridge
