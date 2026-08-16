@@ -6,3 +6,4 @@
 /inventory-mgt/fluentd/log/
 .idea
 /.idea/
+/kafka-with-kraft/kafka-data
